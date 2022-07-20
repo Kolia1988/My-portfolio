@@ -1,0 +1,42 @@
+.header {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.lb {
+    background-color: lightblue;
+    border: 1px solid;
+    margin-bottom: 10px;
+}
+
+.bl {
+    background-color: blue;
+    border: 1px solid;
+    margin-bottom: 10px;
+}
+
+.left {
+    min-height: 230px;
+    background-color: lightblue;
+}
+
+.right {
+    background-color: blue;
+    min-height: 105px;
+    margin-bottom: 20px;
+}
+
+.ex4l {
+    background-color: blue;
+    min-height: 50px;
+    margin-top: 10px;
+}
+
+.ex4r {
+    background-color: lightblue;
+    min-height: 50px;
+    margin-top: 10px;
+}

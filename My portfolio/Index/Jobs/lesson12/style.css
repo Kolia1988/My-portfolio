@@ -1,0 +1,183 @@
+:root {
+    --menu-bg-color: #4d9aa4;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    color: white;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: var(--menu-bg-color);
+    width: 100%;
+    height: 13vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 120px;
+}
+
+.buttons a {
+    text-decoration: none;
+}
+
+.title {
+    background-image: url(Material/Sea.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+button {
+    width: 150px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.big-container {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    gap: 30px;
+}
+
+.images {
+    display: flex;
+    justify-content: space-around;
+}
+
+.blue {
+    background-color: blue;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.blue h2,
+.violet h2,
+.red h2 {
+    line-height: 100px;
+}
+
+.blue img,
+.violet img,
+.red img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.violet {
+    background-color: violet;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.red {
+    background-color: red;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.media {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    gap: 3px;
+}
+
+.media img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+}
+
+@media only screen and (min-width: 660px) and (max-width: 1024px) {
+    .buttons {
+        gap: 60px;
+    }
+    .images {
+        justify-content: space-between;
+        padding-bottom: 80px;
+    }
+    .blue p,
+    .violet p,
+    .red p {
+        font-size: 10px;
+        text-align: justify;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .buttons {
+        gap: 10px;
+    }
+    .header {
+        font-size: xx-small;
+    }
+    .title h2 {
+        font-size: 30px;
+    }
+    .title {
+        gap: 20px;
+    }
+    .title button {
+        width: 75px;
+        height: 15;
+        font-size: 10px;
+    }
+    h2 {
+        font-size: 15px;
+    }
+    .big-container p {
+        font-size: 10px;
+    }
+    .big-container {
+        gap: 50px;
+    }
+    .blue p,
+    .violet p,
+    .red p {
+        text-align: justify;
+    }
+    .images img {
+        width: 20px;
+        height: 20px;
+    }
+    .blue,
+    .violet,
+    .red {
+        padding: 20px;
+    }
+    .media img {
+        width: 25px;
+        height: 25px;
+    }
+    .blue img,
+    .violet img,
+    .red img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
+}
